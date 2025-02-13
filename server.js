@@ -18,6 +18,7 @@ const server = http.createServer((req, res) => {
 
 async function main() {
   try {
+    console.log('TRY TO RUN MAIN');
     await client.connect();
     await client.query(`
 CREATE TABLE IF NOT EXISTS app_user (
