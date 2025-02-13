@@ -7,9 +7,9 @@ const client = new pg.Client({
   password : process.env.DB_PASSWORD,
   port     : process.env.DB_PORT,
   database : process.env.DB_DB_NAME,
-  // ssl: {
-  //   rejectUnauthorized: false,
-  // },
+  ssl: {
+    rejectUnauthorized: false,
+  },
 });
 
 const server = http.createServer((req, res) => {
