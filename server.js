@@ -10,7 +10,7 @@ const client = new pg.Client({
   ssl: {
     rejectUnauthorized: false,
   },
-});
+}); 
 
 const server = http.createServer((req, res) => {
   res.end('HELLO ROMAN');
